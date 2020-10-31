@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title> Pmliqi </title>
+    <meta name="keywords" content="原型托管,Axure托管,Sketch托管,Sketch标注">
+    <meta name="description" content="Pmliqi是服务于创意工作者的网盘式的原型与设计稿托管平台，简单且好用，像网盘管理原型与设计稿等工作相关的软件内容，并在线演示">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='forgot/css/common.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='forgot/css/app.css') }}?t=201806042341" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='forgot/css/font_606901_mgodke9hzyl.css') }}" media="all" />
+    <link rel="icon" href="{{url_for('static', filename='forgot/favicon.png') }}" type="image/png" />
+    <script src="{{url_for('static', filename='forgot/js/require.js') }}"></script>
+    <script src="{{url_for('static', filename='forgot/js/config.js') }}"></script>
+</head>
+<body class="user--login">
+    <div class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logo" href="https://www.wulihub.com.cn">
+                            <img src="{{url_for('static', filename='forgot/images/logo.png') }}" width="150" height="54" alt="WuliHub">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse my-nav">
+                        <ul class="nav navbar-nav nav-daniu_top">
+                            <li class="">
+                                <a target="_self" href="/">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/price" target="_self">价格</a>
+                            </li>
+                            <li class=""><a target="_blank" href="#">教程</a></li>
+                            
+                        </ul>
+                        <a target="_top" class="pull-right btn-login" href="/login">登录</a>
+                        <a target="_top" class="pull-right btn-signup" href="/join">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container home_price-simple_intro ">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <form method="POST" action="#" accept-charset="UTF-8" id="forgot-password" class="form-daniu">
+                    <h4 >找回密码</h4>
+                    <div class="form-group">
+                        <label>邮箱<span class="font-red">*</span></label>
+                        <input placeholder="输入邮箱地址" class="form-control" name="email" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>验证码<span class="font-red">*</span></label><input placeholder="输入验证码" class="form-control" name="captcha" type="text">
+                            <p><img id="captcha" src="../static/forgot/captcha.jpeg"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-success J_submit form-control" type="submit" value="提交">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

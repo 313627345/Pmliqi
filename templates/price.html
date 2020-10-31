@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title> Pmliqi </title>
+	<meta name="keywords" content="原型托管,Axure托管,Sketch托管,Sketch标注">
+    <meta name="description" content="Pmliqi是服务于创意工作者的网盘式的原型与设计稿托管平台，简单且好用，像网盘管理原型与设计稿等工作相关的软件内容，并在线演示">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='price/css/common.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='price/css/app.css') }}?t=201806042341" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='price/css/font_606901_mgodke9hzyl.css') }}" media="all" />
+    <link rel="icon" href="{{url_for('static', filename='price/favicon.png') }}" type="image/png" />
+    <script src="{{url_for('static', filename='price/js/require.js') }}"></script>
+    <script src="{{url_for('static', filename='price/js/config.js') }}"></script>
+</head>
+
+<body class="home_price">
+    <div class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logo" href="/">
+                            <img src="{{url_for('static', filename='price/images/logo.png') }}" width="150" height="54" alt="Pmliqi">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse my-nav">
+                        <ul class="nav navbar-nav nav-daniu_top">
+                            <li class="">
+                                <a target="_self" href="/">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="/price" target="_self">价格</a>
+                            </li>
+                            <li class=""><a target="_blank" href="#">教程</a></li>
+
+                        </ul>
+                        <a target="_top" class="pull-right btn-login" href="/login">登录</a>
+                        <a target="_top" class="pull-right btn-signup" href="/join">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="container home_price-simple_intro ">
+            <h2>价格</h2>
+        </div>
+        <div class="container home_price-items">
+            <div class="row">
+                <div class="home_price-box">
+                    <div class="col-md-6">
+                        <div class="home_price-item">
+                            <h3>免费</h3>
+                            <p class="home_price-item_price">￥ <span>0</span>/月</p>
+                            <p class="home_price-item_btn">
+                                <a href="/login" class="btn btn-default">免费使用</a>
+                            </p>
+                            <p class="home_price-item_desc">
+                                50MB 空间
+                            </p>
+                            <ul class="home_price-item_function_list">
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    覆盖更新zip包，分享链接不变
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    分享链接可以设置密码保护，访问需输入密码
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    付费版到期后，旧文件可以继续编辑
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    空间内不限项目数
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    每项目不限覆盖更新次数
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    单个文件上传限制为50M
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="home_price-item vip">
+                            <h3>专业版</h3>
+                            <p class="home_price-item_price">￥ <span>10</span>/月</p>
+                            <p class="home_price-item_sell">五折优惠 <span>原价￥20</span></p>
+                            <p class="home_price-item_btn">
+                                <a href="/pay" class="btn btn-default">现在升级</a>
+                            </p>
+                            <p class="home_price-item_desc">
+                                2GB 空间
+                            </p>
+                            <ul class="home_price-item_function_list">
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    覆盖更新zip包，分享链接不变
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    分享链接可以设置密码保护，访问需输入密码
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    付费版到期后，旧文件可以继续编辑
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    空间内不限项目数
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    每项目不限覆盖更新次数
+                                </li>
+                                <li>
+                                    <i class="iconfont icon-duigou"></i>
+                                    单个文件上传限制为50M
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="daniu--footer J_p_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                © 2019 Pmliqi <a href="http://www.miit.gov.cn/" target="_blank">浙ICP备14021318号</a>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{url_for('static', filename='price/images/icon@30x.png') }}" alt="Pmliqi">
+            </div>
+            <div class="col-sm-4">
+                <a href="https://www.Pmliqi.com.cn/friend" target="_blank">友情链接 </a>
+                <a href="https://www.Pmliqi.com.cn/contact">联系我们</a>
+                <a href="https://www.Pmliqi.com.cn/about">关于我们</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

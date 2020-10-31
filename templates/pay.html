@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title> WuliHub </title>
+    <meta name="keywords" content="原型托管,Axure托管,Sketch托管,Sketch标注">
+	<meta name="description" content="WuliHub是服务于创意工作者的网盘式的原型与设计稿托管平台，简单且好用，像网盘管理原型与设计稿等工作相关的软件内容，并在线演示">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='pay/css/common.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='pay/css/app.css') }}?t=201806042341" media="all" />
+    <link rel="icon" href="{{url_for('static', filename='pay/favicon.png') }}" type="image/png" />
+    <script src="{{url_for('static', filename='pay/js/require.js') }}"></script>
+    <script src="{{url_for('static', filename='pay/js/require.js') }}"></script>
+</head>
+    <body class="prototype_pay bg-grey">
+			        <div class="navbar login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logo" href="/">
+                            <img src="{{url_for('static', filename='pay/images/logo.png') }}" width="150" height="54" alt="Pmliqi">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse my-nav">
+                        <ul class="nav navbar-nav nav-daniu_left">
+                            <li class=""><a href="/myspace">我的空间</a></li>
+                            <li><a target="_blank" href="#">教程</a></li>
+                        </ul>
+                        <ul class="clearfix pull-right toolbar-ul">
+        <li class="user-status">
+            <a href="#" data-toggle="dropdown" data-target="#">
+                <img src="http://cdn.wulihub.com.cn/uploads/202006/05/13/24137OYQjSKh.png" width="35" height="35" alt="头像">
+            </a>
+            <div class="set-drop-box overview dropdown-menu">
+                <div class="arrow">
+                    <div class="fill"></div>
+                </div>
+                <ul>
+                    <li><a href="#" target="_top"><i class="iconfont icon-setting-user"></i>
+                            帐号设置</a></li>
+                    <li><a href="#" target="_top"><i class="iconfont icon-bill"></i> 财务中心</a></li>
+                    <li><a href="#" target="_top"><i class="iconfont icon-quit"></i> 退出登录</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="container  pt75 ">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>订单支付</h3>
+                    <form method="POST" action="#" accept-charset="UTF-8" class="form-horizontal form-pay form-daniu"><input name="_token" type="hidden" value="Sy7JcDqTUELuyIu6AuQpynmjWxjtn5zQxOeFF9q3">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">服务类型 : </label>
+                        <div class="col-sm-10 pt8">
+                            专业版
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">购买时长 : </label>
+                        <div class="col-sm-10">
+                            <p class="prototype_pay-buy_item"><input checked="checked" name="month" type="radio" value="1">
+                                ￥<span class="prototype_pay-buy_price">10</span><span
+                                        class="prototype_pay-buy_unit">/月</span>
+                                                                <span class="prototype_pay-buy_desc">5折优惠，原价￥20</span>
+                                                            </p>
+                            <p class="prototype_pay-buy_item"><input name="month" type="radio" value="6">
+                                ￥<span class="prototype_pay-buy_price">50</span><span
+                                        class="prototype_pay-buy_unit">/半年</span>
+                                                                <span class="prototype_pay-buy_desc">5折优惠，原价￥100，立省1个月</span>
+                                                            </p>
+                            <p class="prototype_pay-buy_item"><input name="month" type="radio" value="12">
+                                ￥<span class="prototype_pay-buy_price">90</span><span
+                                        class="prototype_pay-buy_unit">/年</span>
+                                                                <span class="prototype_pay-buy_desc">5折优惠，原价￥180，省3个月</span>
+                                                            </p>
+                            <br>
+                            <p class="font-grey">
+                                续费后到期时间为：<span class="prototype_pay-buy_end_date">2020-11-19</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">应付金额 : </label>
+                        <div class="col-sm-10">
+                            <span class="prototype_pay-amount">￥10</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">立即购买</button>
+                            <button onclick="window.history.go(-1)" class="btn btn-default">返回</button>
+                            <br>
+                            <p class="alert alert-warning mr35 mt15">
+                                续订：您的订单不会自动续订，必须在订购到期日后手动续订。<br>
+                                退款：所有订单均不可退款。
+                            </p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            require(['jquery'], function ($) {
+                $('input[type=radio]').on('click', function () {
+                    window.location.href = 'https://www.wulihub.com.cn/prototype/pay/' + $(this).val()
+                })
+            })
+        </script>
+    <div class="daniu--footer J_p_footer" style="display:none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                © 2018 WuliHub <a href="http://www.miit.gov.cn/" target="_blank">鲁ICP备17019679号-3</a>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{url_for('static', filename='main/images/icon@30x.png') }}" alt="Wulihub">
+            </div>
+            <div class="col-sm-4">
+                <a href="#" target="_blank">友情链接 </a>
+                <a href="#">联系我们</a>
+                <a href="#">关于我们</a>
+            </div>
+        </div>
+    </div>
+</div>
+		<script>
+	require(['daniu/cp']);
+	</script>
+	</body>
+</html>

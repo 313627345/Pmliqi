@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pmliqi_产品利器_产品经理必备axure原型托管网站</title>
+    <meta name="keywords" content="原型托管,Axure托管,Sketch托管,Sketch标注">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='myspace/css/nav.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='myspace/css/iconfont.css') }}">
+    <meta name="description" content="Pmliqi是服务于创意工作者的网盘式的原型与设计稿托管平台，简单且好用，像网盘管理原型与设计稿等工作相关的软件内容，并在线演示">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='myspace/css/style.css') }}"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='myspace/js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='myspace/js/nav.js') }}"></script>
+    <style type="text/css">
+        html,body{height:100%;font-size:12px;}
+        td {border:1px;font-size: 12px;margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;}
+        #main{border:None;width:100%;min-height:100%;height:100%;overflow:hidden !important;overflow: visible;}
+        #header{height:94px;border:None;}
+    </style>
+</head>
+
+<body>
+<div class="m-head">
+    <div class="m-head-nav">
+        <ul class="c-wrapper">
+            <li class="m-head-nav-logo">
+                <a href="#"><img src="{{ url_for('static', filename='myspace/images/logo.png') }}" width="150"
+                                 height="54" alt="Pmliqi"></a>
+            </li>
+            <li class="m-head-nav-item  active">
+                <a href="#">我的空间</a>
+            </li>
+
+            <li class="m-head-nav-item  ">
+                <a href="#">教程</a>
+            </li>
+
+            <li class="m-head-nav-item  ">
+                <a href="#">联系我们</a>
+            </li>
+
+            <li class="m-head-nav-item m-head-nav-right ">
+                <a href="#">我的</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<table id="main">
+    <tr>
+        <td style="width: 200px" id="header">
+            <div class="nav">
+                <div class="nav-top">
+                    <div id="mini" style="border-bottom:1px solid rgba(255,255,255,.1)"><img
+                            src="{{ url_for('static', filename='myspace/images/mini.png') }}" width="32" height="32"
+                            alt="Pmliqi">
+                    </div>
+                </div>
+                <ul>
+                    <li class='nav-item'>
+                        <a>
+                            <i><img src="{{ url_for('static', filename='myspace/images/caidan.png') }}" width="20"
+                                    height="20" alt="Pmliqi"></i>
+                            <span>项目1</span>
+                        </a>
+                    </li>
+                    <li class='nav-item'>
+                        <a>
+                            <i><img src="{{ url_for('static', filename='myspace/images/caidan.png') }}" width="20"
+                                    height="20" alt="Pmliqi"></i>
+                            <span>项目2</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <table style="width: 100%;border: #0F7EF7" border="1">
+                    <tr style="background: #00cc44">
+                        <th>接口名称</th>
+                        <th>接口代码</th>
+                        <th>调用次数</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">推送门诊信息</td>
+                        <td style="text-align: center">C111111</td>
+                        <td style="text-align: center">54</td>
+                        <td style="text-align: center"><a href="#">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">推送门诊退费信息</td>
+                        <td style="text-align: center">C111111</td>
+                        <td style="text-align: center">54</td>
+                        <td style="text-align: center"><a href="#">查看详情</a></td>
+                    </tr>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<script src="{{ url_for('static', filename='myspace/js/jquery-1.11.0.js') }}" type="text/javascript"
+        charset="utf-8"></script>
+<script src="{{ url_for('static', filename='myspace/js/jquery.SuperSlide.2.1.1.js') }}" type="text/javascript"
+        charset="utf-8"></script>
+
+</body>
+</html>

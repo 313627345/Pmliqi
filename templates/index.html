@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title> Pmliqi_产品利器_产品经理必备axure原型托管网站 </title>
+    <meta name="keywords" content="原型托管,Axure托管,Sketch托管,Sketch标注">
+    <meta name="description" content="Pmliqi是服务于创意工作者的网盘式的原型与设计稿托管平台，简单且好用，像网盘管理原型与设计稿等工作相关的软件内容，并在线演示">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main/css/common.css') }}" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main/css/app.css') }}?t=201806042341" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main/css/mgodke9hzyl.css') }}" media="all" />
+    <link rel="icon" href="{{url_for('static', filename='main/favicon.png') }}" type="image/png" />
+    <script src="{{url_for('static', filename='main/js/require.js') }}"></script>
+    <script src="{{url_for('static', filename='main/js/config.js') }}"></script>
+</head>
+<body class="home_homepage">
+    <div class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logo" href="#">
+                            <img src="{{url_for('static', filename='main/images/logo.png') }}" width="150" height="54" alt="Pmliqi">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse my-nav">
+                        <ul class="nav navbar-nav nav-daniu_top">
+                            <li class="active">
+                                <a target="_self" href="/">首页</a>
+                            </li>
+                            <li class="">
+                                <a href="/price" target="_self">价格</a>
+                            </li>
+                            <li class=""><a target="_blank" href="#">教程</a></li>
+
+                        </ul>
+                        <a target="_top" class="pull-right btn-login" href="/login">登录</a>
+                        <a target="_top" class="pull-right btn-signup" href="/join">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_homepage--intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="{{url_for('static', filename='main/images/work_intro.png') }}" alt="">
+                    <p>
+                        <a href="/join" class="btn btn-success">免费注册</a>
+                        <a href="#" class="btn btn-default J_iframe" data-title="Pmliqi 操作 演示" data-width="720" data-height="405" ><i class="glyphicon glyphicon-play-circle"></i>操作演示视频</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home_homepage--element">
+            <div class="row mt20 pb20">
+                <div class="col-md-6">
+                    <div class="element-box">
+                        <h4>功能介绍</h4>
+                        <div>
+                            <p class="head">不限文件数量，50M存储空间（免费版），2G存储空间（专业版）</p>
+                            <p class="feature"><i class="iconfont icon-duigou"></i>覆盖更新zip包，分享链接不变</p>
+                            <p class="feature"><i class="iconfont icon-duigou"></i>分享链接可以设置密码保护，访问需输入密码</p>
+                            <p class="feature"><i class="iconfont icon-duigou"></i>付费版到期后，旧文件可以继续编辑</p>
+                            <p class="feature"><i class="iconfont icon-duigou"></i>每项目不限覆盖更新次数，单个文件上传限制为50M</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="element-box">
+                        <h4>你将会爱上Pmliqi</h4>
+                        <div>
+                            <p class="odds"><img src="{{url_for('static', filename='main/images/work_show_1.png') }}" width="40" alt="">你可以在简历里添加可在线展示的作品链接地址，求职成功率更高</p>
+                            <p class="odds"><img src="{{url_for('static', filename='main/images/work_show_2.png') }}" width="40" alt="">分享链接允许多人同时查看你的作品内容，可发给客户、同事、老板等</p>
+                            <p class="odds"><img src="{{url_for('static', filename='main/images/work_show_3.png') }}" width="40" alt="">他人不用装软件，通过分享链接，在浏览器就能查看你的作品内容</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="home_homepage--support mt50 mb20">
+            <p class="mb50">目前，这些软件导出的HTML都可以在线托管和分享</p>
+            <div class="row">
+                <div class="support-col">
+                    <div class="support-box">
+                        <h4>思维导图</h4>
+                        <div>
+                            <div class="software">
+                                <div>
+                                    <img src="{{url_for('static', filename='main/images/prototype-mind_manager.png') }}" alt=""><span>MindManager</span>
+                                </div>
+                                <div>
+                                 <a target="_blank" href="#" class="tutorial">教程</a>
+                                 <a target="_blank" href="#" class="demo">演示</a>
+                             </div>
+                         </div>
+                         <hr>
+                         <div class="software">
+                            <div>
+                                <img src="{{url_for('static', filename='main/images/prototype-xmind.png') }}" alt="">
+                                        <span>Xmind</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-col">
+                        <div class="support-box">
+                            <h4>设计</h4>
+                            <div>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-sketch.png') }}" alt="">
+                                        <span>Sketch</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-col">
+                        <div class="support-box">
+                            <h4>幻灯片</h4>
+                            <div>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-keynote.png') }}" alt="">
+                                        <span>Keynote</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-col">
+                        <div class="support-box">
+                            <h4>原型</h4>
+                            <div>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-axure.png') }}" alt="">
+                                        <span>Axure</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-justin_mind.png') }}" alt="">
+                                        <span>Justinmind</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-col">
+                        <div class="support-box">
+                            <h4>文档</h4>
+                            <div>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-word.png') }}" alt="">
+                                        <span>Word</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-markdown.png') }}" alt="">
+                                        <span>Markdown</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-col">
+                        <div class="support-box">
+                            <h4>表格</h4>
+                            <div>
+                                <div class="software">
+                                    <div>
+                                        <img src="{{url_for('static', filename='main/images/prototype-excel.png') }}" alt="">
+                                        <span>Excel</span>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="#" class="tutorial">教程</a>
+                                        <a target="_blank" href="#" class="demo">演示</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="home_homepage--todo mt50 mb20">
+                <p class="mb50">他们用Pmliqi在干什么</p>
+                <div class="row">
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>产品经理</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_productor.png') }}" alt="">
+                                    <p>
+                                        将Axure 原型或其他原型工具生成的HTML原型文件进行托管
+                                    </p>
+                                    <p>
+                                        用链接即可分享，用浏览器就能看，不必再安装插件
+                                    </p>
+                                    <p>
+                                        覆盖更新，链接不变，频繁改动内容也不用怕
+                                    </p>
+                                    <p>
+                                        在邮件、文档、聊天工具里用URL分享，极大的提升了产品的工作效率
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>设计师</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_designer.png') }}" alt="">
+                                    <p>
+                                        Sketch + Measure插件，一键搞定标注、色值选择、切图等
+                                    </p>
+                                    <p>
+                                        托管Measure导出的HTML文件，托管后链接即可分享，页面自带切图和标注
+                                    </p>
+                                    <p>
+                                        不用再一个一个页面标注间距、切了图上还得再传百度网盘
+                                    </p>
+                                    <p>
+                                        改动设计稿直接覆盖更新即可，链接不变
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>市场经理</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_seller.png') }}" alt="">
+                                    <p>
+                                        PPT做完后发邮件，如果一旦PPT出错，邮件就得重新再发一次，还可能会被骂
+                                    </p>
+                                    <p>
+                                        将Keynote做的PPT导出并托管，直接在邮件里发PPT的链接即可
+                                    </p>
+                                    <p>
+                                        每次PPT 有改动，只需覆盖更新即可，链接不变，内容自动就变化了
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>运营经理</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_operator.png') }}" alt="">
+                                    <p>
+                                        做思维导图一旦比较大，导出的图片页面就会很长，并且很多东西都没办法显示
+                                    </p>
+                                    <p>
+                                        导出并托管思维导图，浏览器就可以看，并且内容完全还原
+                                    </p>
+                                    <p>
+                                        他人不装思维导图软件也可以很全面的看我的思路，折叠和收起都可以操作
+                                    </p>
+                                    <p>
+                                        还可以在简历里加上我的脑图作品链接，这是将脑图导成图片没办法做到的
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>程序员</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_programmer.png') }}" alt="">
+                                    <p>
+                                        静态HTML页面托管，可以将API文档、技术文档等导成HTML并进行托管
+                                    </p>
+                                    <p>
+                                        改动了只需覆盖更新即可，链接不会变化
+                                    </p>
+                                    <p>
+                                        相比GitHub的page，Pmliqi更像一个网盘形式的静态页面托管，更适合托管一些需要频繁操作的东西，并且操作更简单
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>测试工程师</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_tester.png') }}" alt="">
+                                    <p>
+                                        测试用例用软件导出成HTML，然后将测试用例托管并分享
+                                    </p>
+                                    <p>
+                                        结合脑图、和研发文档，可以将测试的内容统一融合
+                                    </p>
+                                    <p>
+                                        把测试追踪、BUG库和Pmliqi融合起来
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>创投经理</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_speaker.png') }}" alt="">
+                                    <p>
+                                        用PPT和Markdown写项目分析报告或跟踪项目进展情况
+                                    </p>
+                                    <p>
+                                        托管PPT和Markdown写的内容，只需分享链接即可，改动就覆盖更新
+                                    </p>
+                                    <p>
+                                        设置链接加密，访问做控制，保证内容不泄露
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="todo-col">
+                        <div class="todo-box">
+                            <h4>人力资源</h4>
+                            <div>
+                                <div class="todo-content">
+                                    <img src="{{url_for('static', filename='main/images/role_hr.png') }}" alt="">
+                                    <p>
+                                        Excle表格托管后，我不必在邮件里再添加表格的附件了
+                                    </p>
+                                    <p>
+                                        所有需要Excle展示的工作，都以链接的形式分享，频繁改动只需覆盖更新即可
+                                    </p>
+                                    <p>
+                                        展示内容不出错，邮件、微信、QQ、钉钉等都只需分享链接就行
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="daniu--footer J_p_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                © 2019 Pmliqi <a href="http://www.miit.gov.cn/" target="_blank">浙ICP备14021318号</a>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{url_for('static', filename='main/images/icon@30x.png') }}" alt="Pmliqi">
+            </div>
+            <div class="col-sm-4">
+                <a href="#" target="_blank">友情链接 </a>
+                <a href="#">联系我们</a>
+                <a href="#">关于我们</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

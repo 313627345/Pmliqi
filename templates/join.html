@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title> Pmliqi </title>
+	<meta name="keywords" content="原型托管,Axure托管,Sketch托管,Sketch标注">
+	<meta name="description" content="Pmliqi是服务于创意工作者的网盘式的原型与设计稿托管平台，简单且好用，像网盘管理原型与设计稿等工作相关的软件内容，并在线演示">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='join/css/common.css') }}" media="all" />
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='join/css/app.css') }}?t=201806042341" media="all" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='join/css/font_606901_mgodke9hzyl.css') }}" media="all" />
+    <link rel="icon" href="{{url_for('static', filename='join/favicon.png') }}" type="image/png" />
+    <script src="{{url_for('static', filename='join/js/require.js') }}"></script>
+    <script src="{{url_for('static', filename='join/js/config.js') }}"></script>
+</head>
+    <body class="user--login">
+        <div class="navbar">
+        <div class="container language-title">
+            <div>
+                <span>International users are advised to visit International-English site, Data and account number are different between International site and China site</span>
+                <a class="btn btn-success" href="http://www.Pmliqi.com">Access</a><a class="btn display">Close</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logo" href="/">
+                            <img src="{{url_for('static', filename='join/images/logo.png') }}" width="150" height="54" alt="Pmliqi">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse my-nav">
+                        <ul class="nav navbar-nav nav-daniu_top">
+                            <li class="">
+                                <a target="_self" href="/">
+                                    首页
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/price" target="_self">价格</a>
+                            </li>
+                            <li class=""><a target="_blank" href="#">教程</a></li>
+                            
+                        </ul>
+                        <a target="_top" class="pull-right btn-login" href="/login">登录</a>
+                        <a target="_top" class="pull-right btn-signup" href="/join">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <h4>注册</h4>
+        <div class="container register_box">
+            <div class="row">
+                <div class="login-login">
+                    <form method="POST" action="#" accept-charset="UTF-8" id="form_register" class="form-Pmliqi"><input name="_token" type="hidden" value="fwXHHXeibF4kFH9ZbZ6uZC0jaJcf6Qz3OD6bprZB">
+                    <div class="form-group">
+                        <label>昵称</label>
+                        <input placeholder="常用昵称或真实姓名" class="form-control" name="nickname" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>邮箱</label>
+                        <input placeholder="输入邮箱地址" class="form-control" name="email" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input placeholder="设置密码" class="form-control" name="password" type="password" value="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success form-control" type="submit">注册</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container sign_up_box">
+            <div class="row">
+                <p>
+                    已有帐号？ <a href="/login">直接登录</a>
+                </p>
+            </div>
+        </div>
+<div class="daniu--footer J_p_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        © 2019 Pmliqi <a href="http://www.miit.gov.cn/" target="_blank">浙ICP备14021318号</a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="{{url_for('static', filename='join/images/icon@30x.png') }}" alt="Pmliqi">
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.Pmliqi.com.cn/friend" target="_blank">友情链接 </a>
+                        <a href="https://www.Pmliqi.com.cn/contact">联系我们</a>
+                        <a href="https://www.Pmliqi.com.cn/about">关于我们</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
